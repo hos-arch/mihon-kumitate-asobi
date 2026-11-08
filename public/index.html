@@ -67,6 +67,8 @@ button:focus-visible,input:focus-visible{outline:3px solid #e0b24a;outline-offse
 .row h3{font-size:14px;margin:0;color:#5a5040;font-weight:600}
 [data-only]{display:none}
 [data-only].on{display:flex}
+[data-cover]{display:none}
+[data-cover].on{display:flex}
 .more{font:inherit;display:flex;align-items:center;gap:10px;min-height:52px;padding:8px 14px;border-radius:14px;border:1.5px dashed #cdbf9f;background:transparent;color:#3a3326;cursor:pointer;text-align:left}
 .more .caret{display:inline-block;font-size:14px;transition:transform .2s}
 .more[aria-expanded="true"] .caret{transform:rotate(90deg)}
@@ -101,39 +103,50 @@ button:focus-visible,input:focus-visible{outline:3px solid #e0b24a;outline-offse
 <div id="intro" role="dialog" aria-labelledby="introTitle">
   <div class="card">
     <h1 id="introTitle">みほん くみたて あそび（支援者用の説明）</h1>
-    <p>見本カードを見ながら、同じものを<b>横の台紙に作る</b>遊びです。見本の上に重ねるのではなく、見本を見て、位置を自分で判断して作ることを大事にします。完成させることより、子どもが<b>見本を見て、形を選び、場所を決めて、自分で置く</b>ことを大事にします。</p>
-    <p>見本と同じ位置に置くと「ことん」と入り、星が出ます。合わない位置に置いた部品は<b>その場に残ります</b>。子ども自身が気づいて、つまみ直せるように見守ってください。</p>
-    <p class="note">この遊びは、「見本に重ねる」（7-1 (1)）ができるようになってから使います。</p>
+    <p>見本カードを見ながら、同じものを<b>横の台紙に作る</b>遊びです。見本の上に重ねるのではなく、見本を見て、位置を自分で判断して作ります。完成させることより、子どもが<b>見本を見て、形を選び、場所を決めて、自分で置く</b>ことを大事にします。</p>
+    <p>見本と同じ位置に置くと「ことん」と入り、星が出ます。合わない位置に置いた部品は<b>その場に残ります</b>（失敗の音や揺れは出ません）。子ども自身が見本と見比べて気づき、つまみ直せるように見守ってください。</p>
+    <p class="note">この遊びは、「くみたて あそび」（見本に重ねる）ができるようになってから使います。</p>
     <h2>すすめ方</h2>
     <ol>
       <li>「はじめる」を押す。最初は、ご石が2つです。</li>
-      <li>大人が見本を指さし、台紙の同じ場所に1つ置いてみせる。「同じところに置こうね」と声をそえる。</li>
+      <li>大人が見本を指さし、「これと同じのを作ってね」と声をかける。最初は、台紙の同じ場所に1つ置いてみせる。</li>
       <li>子どもが自分から手を出すのを待つ。見本を見ずに置いているときは、見本を指さして、目を向けるきっかけを作る。</li>
-      <li>うまくいかないときは、手を添えて一緒に運ぶ。様子に合わせて、材料・部品の数・手助けを変える。嫌がる様子があったら、下の「とめる」で止める。</li>
+      <li>うまくいかないときは、手を添えて一緒に運ぶ。様子に合わせて、材料・部品の数・手助け・見本の見せ方を変える。嫌がる様子があったら、下の「とめる」で止める。</li>
     </ol>
     <h2>材料</h2>
     <ul>
-      <li>ご石：丸い見本カードの、同じ色の場所に石を置きます。色で選びます。</li>
-      <li>色紙：花・家・木などの見本に、同じ形・同じ色の色紙を重ねます。形と大きさで選びます。</li>
-      <li>プレート：四角の枠を三角や四角で埋めます。部品はみな同じ色です。形と向きで選びます。</li>
+      <li>ご石：丸い見本カードと同じ並びに、同じ色の石を置きます。色と位置を見ます。</li>
+      <li>色紙：家・木・きのこ・魚・バスなどの見本と同じものを、形・色・大きさで選んで作ります。</li>
+      <li>プレート：四角の枠を三角や四角で分けた形と、矢印です。部品はみな同じ色なので、形と向きで選びます。矢印は、上下左右に向きが変わります。</li>
+      <li>積木：積み木を正面から見た形（門・塔・家・お城など）です。どれが下で、どれが上かを見て作ります。</li>
     </ul>
+    <h2>見本の見せ方（実物の課題で、見本を紙でかくすのと同じ）</h2>
+    <ul>
+      <li>見せる：見本がずっと見えます。まずはここから。</li>
+      <li>はじめだけ：見本を約5秒見せたあと、紙がかぶさります。見た形を覚えて作ります。</li>
+      <li>紙でかくす：はじめから紙がかぶさっています。大人が、画面の下の紙のボタンで、紙を外して見せたり、かぶせたりします（実物で、紙を手で持って見せるのと同じ）。</li>
+      <li>「紙をめくって見る：できる」にすると、子どもが紙を押さえている間だけ、見本が見えます。自分から見本を確かめに行くかどうかも、大事な見るところです。</li>
+      <li>完成すると紙が外れて、見本と見比べられます。</li>
+    </ul>
+    <h2>見本の出し方</h2>
+    <p>「作って見せる」にすると、大人が台紙の上に見本を作るように、部品が1つずつ置かれていきます（本の図2と同じ流れ）。作る順番を見ることも、手がかりになります。</p>
     <h2>見るところ（記録はアプリに残りません）</h2>
     <ul>
-      <li>置く前に、見本を見ているか。部品と見本を見比べているか。</li>
-      <li>形・色・大きさのどれで選んでいるか。手当たり次第に試していないか。</li>
-      <li>入らなかったとき、別の場所や別の部品を、自分で試すか。</li>
-      <li>横に作るとき：台紙に置いたあと、見本と見比べて、自分で置き直すか。重ねるではできて、横に作るでつまずくところはどこか。</li>
+      <li>置く前に、見本を見ているか。見本と台紙を、何度も見比べているか。</li>
+      <li>形・色・大きさ・向き・位置のどれで間違えるか。</li>
+      <li>台紙に置いたあと、見本と見比べて、自分で置き直すか。</li>
+      <li>見本をかくしたとき、どこまで作れるか。自分から紙をめくって確かめに行くか。</li>
+      <li>重ねる（くみたて あそび）ではできて、横に作るでつまずくところはどこか。</li>
       <li>気づいたことは、紙のメモに書いてください。このアプリは名前も記録も保存しません。</li>
     </ul>
     <h2>手助け</h2>
     <ul>
-      <li>大きい：見本の上ならどこで離しても、合う場所に入ります。空いている場所がやわらかく光ります。</li>
-      <li>ふつう：合う場所の近くで離すと入ります。少し待つと、入る場所が光ります。</li>
-      <li>小さい：場所をぴったり合わせます。光りません。ヒントは、支援者メニューの「ヒントを今出す」で出します。</li>
+      <li>大きい：台紙に、置く場所のうすい輪郭が出ます（重ねるからの橋渡し）。台紙の上ならどこで離しても、合う場所に入ります。</li>
+      <li>ふつう：台紙の真ん中に、うすい十字だけ出ます。合う場所の近くで離すと入ります。少し待つと、ずれている部品と、その入る場所が光ります。</li>
+      <li>小さい：台紙には何も出ません。場所をぴったり合わせます。光りません。ヒントは、支援者メニューの「ヒントを今出す」で出します。</li>
     </ul>
-    <p>横に作るときの台紙の手がかり：大きい＝置く場所のうすい輪郭が出ます（重ねるからの橋渡し）／ふつう＝真ん中に、うすい十字だけ出ます／小さい＝何も出ません。少し待つと、ずれている部品と、その入る場所が光ります（ふつうのとき）。</p>
     <h2>実物と一緒に</h2>
-    <p>画面は、実物の代わりではありません。画面で見本どおりにできるようになったら、色紙やプレートに磁石をつけて、ホワイトボードなどの実物でもやってみてください。</p>
+    <p>画面は、実物の代わりではありません。画面で見本どおりにできるようになったら、色紙やプレートに磁石をつけて、ホワイトボードで。積木は、本物の積み木で。紙で見本をかくす課題も、実物でやってみてください。</p>
     <p>設定は、右上の点を1秒ほど長押しすると開きます。カメラもマイクも使いません。</p>
     <button id="introBtn" type="button">はじめる</button>
   </div>
@@ -143,6 +156,9 @@ button:focus-visible,input:focus-visible{outline:3px solid #e0b24a;outline-offse
   <button id="freezeBtn" aria-pressed="false" aria-label="とめる／再開（支援者用）" title="とめる">
     <svg class="pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4.5" height="14" rx="1.5" fill="#3a3326"/><rect x="13.5" y="5" width="4.5" height="14" rx="1.5" fill="#3a3326"/></svg>
     <svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z" fill="#3a3326"/></svg>
+  </button>
+  <button id="coverBtn" aria-pressed="false" aria-label="見本に紙をかぶせる／外す（支援者用）" title="見本の紙">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h10l4 4v13H5z" fill="none" stroke="#3a3326" stroke-width="2" stroke-linejoin="round"/><path d="M15 3.5v4h4" fill="none" stroke="#3a3326" stroke-width="2" stroke-linejoin="round"/><path d="M8 12h8M8 15.5h6" stroke="#3a3326" stroke-width="1.6" stroke-linecap="round"/></svg>
   </button>
   <button id="duskBtn" aria-pressed="false" aria-label="おしまいの合図（支援者用）" title="おしまい">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16a7 7 0 0 1 14 0" fill="none" stroke="#3a3326" stroke-width="2" stroke-linecap="round"/><path d="M2 19.5h20" stroke="#3a3326" stroke-width="2" stroke-linecap="round"/><path d="M12 5v2.5M5.5 8l1.7 1.7M18.5 8l-1.7 1.7" stroke="#3a3326" stroke-width="2" stroke-linecap="round"/></svg>
@@ -161,6 +177,25 @@ button:focus-visible,input:focus-visible{outline:3px solid #e0b24a;outline-offse
 
     <section class="group" aria-labelledby="gScene">
       <h2 id="gScene">この場面（見本の横に作る）</h2>
+      <div class="row">
+        <h3>材料</h3>
+        <div class="opts four">
+          <button class="opt" data-set="mat" data-v="stone">ご石</button>
+          <button class="opt" data-set="mat" data-v="paper">色紙</button>
+          <button class="opt" data-set="mat" data-v="plate">プレート</button>
+          <button class="opt" data-set="mat" data-v="block">積木</button>
+        </div>
+        <p class="note">ご石＝色で選ぶ／色紙＝形・色・大きさで選ぶ／プレート＝同じ色の部品を、形と向きで選ぶ（四角の枠と、矢印）／積木＝積み木を正面から見た形。上下の積み重なりを見る。</p>
+      </div>
+      <div class="row">
+        <h3>部品の数</h3>
+        <div class="opts four">
+          <button class="opt" data-set="n" data-v="2">2つ</button>
+          <button class="opt" data-set="n" data-v="3">3つ</button>
+          <button class="opt" data-set="n" data-v="4">4つ</button>
+          <button class="opt" data-set="n" data-v="6">6つ</button>
+        </div>
+      </div>
       <div class="row" data-only="stone">
         <h3>色の数</h3>
         <div class="opts three">
@@ -168,6 +203,31 @@ button:focus-visible,input:focus-visible{outline:3px solid #e0b24a;outline-offse
           <button class="opt" data-set="colors" data-v="3">＋赤</button>
           <button class="opt" data-set="colors" data-v="4">＋青</button>
         </div>
+      </div>
+      <div class="row">
+        <h3>見本の見せ方</h3>
+        <div class="opts three">
+          <button class="opt" data-set="cover" data-v="show">見せる</button>
+          <button class="opt" data-set="cover" data-v="first">はじめだけ</button>
+          <button class="opt" data-set="cover" data-v="paper">紙でかくす</button>
+        </div>
+        <p class="note">はじめだけ＝見本を約5秒見せたあと、紙がかぶさる／紙でかくす＝はじめから紙がかぶさっている。どの場合も、画面の下の紙のボタンで、いつでも紙をかぶせたり外したりできます。完成すると、紙が外れて見比べられます。</p>
+      </div>
+      <div class="row" data-cover="first paper">
+        <h3>紙をめくって見る</h3>
+        <div class="opts">
+          <button class="opt" data-set="peek" data-v="on">できる</button>
+          <button class="opt" data-set="peek" data-v="off">できない</button>
+        </div>
+        <p class="note">できる＝子どもが紙を押さえている間だけ、紙が持ち上がって見本が見えます（見に行くかどうかも、見るところです）。</p>
+      </div>
+      <div class="row">
+        <h3>見本の出し方</h3>
+        <div class="opts">
+          <button class="opt" data-set="build" data-v="now">すぐ出す</button>
+          <button class="opt" data-set="build" data-v="build">作って見せる</button>
+        </div>
+        <p class="note">作って見せる＝大人が台紙の上に見本を作るように、見本の部品が1つずつ置かれていきます。できあがるまで、部品は持てません。</p>
       </div>
       <div class="row">
         <h3>ヒント</h3>
@@ -287,7 +347,8 @@ window.addEventListener('resize', resize);
 resize();
 
 // ---- 設定（保存しない）----
-const S = { mode: 'copy', mat: 'stone', n: 2, colors: 2, hint: 'on', assist: 'mid', firstOnly: true, look: 'mid', cel: 'soft', vol: 30, sound: true };
+// cover＝見本の見せ方（show 見せる／first はじめだけ／paper 紙でかくす）、peek＝子どもが紙をめくって見られるか、build＝見本の出し方（now すぐ／build 作って見せる）
+const S = { mode: 'copy', mat: 'stone', n: 2, colors: 2, cover: 'show', peek: 'on', build: 'now', hint: 'on', assist: 'mid', firstOnly: true, look: 'mid', cel: 'soft', vol: 30, sound: true };
 // 見た目の強さ：edge＝ふちの線、glow＝入れ口の光、stars＝星、bits＝紙くず、light＝明かり
 const LOOK = {
   soft:   { edge: 0.14, lw: 1,   glow: 0.18, stars: 2, bits: 4,  light: 0.45 },
@@ -418,32 +479,66 @@ const asst = () => ({
   small: { grab: 1.1,  tol: 0.35, any: false, idle: 1e9, glowAll: false }
 })[S.assist];
 
-const COL = { red: '#e46a5f', yellow: '#f2c14e', sky: '#8fc0e2', blue: '#5f9fd6', brown: '#b07a4f', trunk: '#a87a4f', green: '#7fbf7f', leaf: '#5aa36e', pink: '#ee8d8d', snow: '#f6f3ec', ink: '#55505e', mast: '#8a6a48', wood: '#efd6a6' };
+const COL = { cream: '#f3e3c3', cone: '#d9a066', red: '#e46a5f', yellow: '#f2c14e', sky: '#8fc0e2', blue: '#5f9fd6', brown: '#b07a4f', trunk: '#a87a4f', green: '#7fbf7f', leaf: '#5aa36e', pink: '#ee8d8d', snow: '#f6f3ec', ink: '#55505e', mast: '#8a6a48', wood: '#efd6a6' };
 const STONE = ['#3d3832', '#f7f3ea', '#e46a5f', '#5f9fd6'];   // 黒・白・赤・青
 const R = (x, y, w, h, col, r) => ({ t: 'rect', x, y, w, h, col, r });
 const E = (x, y, w, h, col) => ({ t: 'ell', x, y, w, h, col });
 const PL = (x, y, w, h, col, pts) => ({ t: 'poly', x, y, w, h, col, pts });
 const LF = (x, y, w, h, col, rot) => ({ t: 'leaf', x, y, w, h, col, rot });
+const AR = (x, y, w, h, col) => ({ t: 'arch', x, y, w, h, col });   // アーチ（積木）
+const SM = (x, y, w, h, col) => ({ t: 'semi', x, y, w, h, col });   // 半円（下が平ら）
+const B = (x, y, w, h, col) => R(x, y, w, h, col, 0.05);            // 積み木（角が少しだけ丸い）
 const TRI_UP = [[0, -0.5], [0.5, 0.5], [-0.5, 0.5]];
 const TULIP = [[-0.5, -0.5], [-0.22, -0.16], [0, -0.5], [0.22, -0.16], [0.5, -0.5], [0.46, 0.12], [0.2, 0.5], [-0.2, 0.5], [-0.46, 0.12]];
 // 色紙の見本（部品の数ごと）。並び順＝重なりの順（後ろのものから）
 const PAPERS = {
   2: [
     { id: 'house2', parts: [R(50, 62, 52, 40, COL.yellow, 0.06), PL(50, 31, 68, 26, COL.red, TRI_UP)] },
-    { id: 'tree',   parts: [R(50, 72, 12, 32, COL.trunk, 0.15), E(50, 40, 52, 48, COL.green)] }
+    { id: 'tree',   parts: [R(50, 72, 12, 32, COL.trunk, 0.15), E(50, 40, 52, 48, COL.green)] },
+    { id: 'mushroom', parts: [R(50, 70, 18, 28, COL.cream, 0.3), SM(50, 45, 60, 26, COL.red)] },
+    { id: 'icecream', parts: [PL(50, 66, 28, 38, COL.cone, [[-0.5, -0.5], [0.5, -0.5], [0, 0.5]]), E(50, 38, 36, 32, COL.pink)] }
   ],
   3: [
     { id: 'snow', parts: [E(50, 68, 44, 40, COL.snow), E(50, 37, 28, 26, COL.snow), R(50, 19, 22, 14, COL.ink, 0.12)] },
     { id: 'car',  parts: [R(50, 54, 72, 24, COL.sky, 0.2), E(30, 69, 18, 18, COL.ink), E(70, 69, 18, 18, COL.ink)] },
+    { id: 'fish', parts: [E(44, 52, 52, 34, COL.blue), PL(80, 52, 20, 28, COL.sky, [[0.5, -0.5], [0.5, 0.5], [-0.5, 0]]), E(31, 47, 9, 9, COL.ink)] },
+    { id: 'flower', parts: [R(50, 70, 6, 34, COL.green, 0.3), E(50, 40, 38, 36, COL.pink), E(50, 40, 14, 14, COL.yellow)] },
     { id: 'boat', parts: [R(50, 42, 5, 38, COL.mast, 0.3), PL(64, 42, 24, 32, COL.pink, [[-0.5, -0.5], [0.5, 0.5], [-0.5, 0.5]]), PL(50, 70, 72, 18, COL.brown, [[-0.5, -0.5], [0.5, -0.5], [0.34, 0.5], [-0.34, 0.5]])] }
   ],
   4: [
     { id: 'tulip',  parts: [R(50, 64, 6, 40, COL.green, 0.3), LF(35, 66, 13, 32, COL.leaf, -0.55), LF(65, 66, 13, 32, COL.leaf, 0.55), PL(50, 32, 32, 28, COL.pink, TULIP)] },
-    { id: 'house4', parts: [R(50, 62, 52, 40, COL.yellow, 0.06), PL(50, 31, 68, 26, COL.red, TRI_UP), R(37, 57, 13, 13, COL.sky, 0.12), R(61, 71, 13, 22, COL.brown, 0.12)] }
+    { id: 'house4', parts: [R(50, 62, 52, 40, COL.yellow, 0.06), PL(50, 31, 68, 26, COL.red, TRI_UP), R(37, 57, 13, 13, COL.sky, 0.12), R(61, 71, 13, 22, COL.brown, 0.12)] },
+    { id: 'bus', parts: [R(50, 54, 78, 30, COL.yellow, 0.15), R(44, 47, 46, 11, COL.sky, 0.2), E(29, 71, 16, 16, COL.ink), E(71, 71, 16, 16, COL.ink)] },
+    { id: 'mushroom4', parts: [R(50, 72, 18, 26, COL.cream, 0.3), SM(50, 47, 64, 30, COL.red), E(38, 46, 9, 9, COL.snow), E(60, 42, 9, 9, COL.snow)] }
   ],
   6: [
     { id: 'houseTree', parts: [R(38, 64, 40, 32, COL.yellow, 0.06), PL(38, 38, 54, 22, COL.red, TRI_UP), R(29, 60, 10, 10, COL.sky, 0.12), R(47, 72, 10, 16, COL.brown, 0.12), R(79, 74, 8, 22, COL.trunk, 0.15), E(79, 52, 28, 30, COL.green)] },
-    { id: 'train', parts: [R(43, 56, 46, 22, COL.red, 0.1), R(71, 48, 20, 38, COL.blue, 0.1), R(29, 38, 8, 14, COL.ink, 0.15), E(29, 72, 14, 14, COL.ink), E(50, 72, 14, 14, COL.ink), E(71, 72, 14, 14, COL.ink)] }
+    { id: 'train', parts: [R(43, 56, 46, 22, COL.red, 0.1), R(71, 48, 20, 38, COL.blue, 0.1), R(29, 38, 8, 14, COL.ink, 0.15), E(29, 72, 14, 14, COL.ink), E(50, 72, 14, 14, COL.ink), E(71, 72, 14, 14, COL.ink)] },
+    { id: 'flower6', parts: [R(50, 64, 6, 34, COL.green, 0.3), LF(37, 66, 11, 26, COL.leaf, -0.6), LF(63, 66, 11, 26, COL.leaf, 0.6), E(50, 32, 40, 36, COL.pink), E(50, 32, 14, 14, COL.yellow), R(50, 86, 34, 14, COL.brown, 0.15)] },
+    { id: 'rocket', parts: [R(50, 52, 22, 42, COL.snow, 0.3), PL(50, 24, 22, 16, COL.red, TRI_UP), PL(34, 68, 12, 18, COL.red, [[0.5, -0.5], [0.5, 0.5], [-0.5, 0.5]]), PL(66, 68, 12, 18, COL.red, [[-0.5, -0.5], [0.5, 0.5], [-0.5, 0.5]]), E(50, 45, 11, 11, COL.sky), PL(50, 82, 14, 12, COL.yellow, [[-0.5, -0.5], [0.5, -0.5], [0, 0.5]])] }
+  ]
+};
+// 積木の見本（正面から見た形）。台（机）の線は y=86。部品の並び順＝下から（重なりの順）
+const BK = { red: '#e0705f', yellow: '#f0c45a', blue: '#6aa2d6', green: '#82bf86', wood: '#e2bd88' };
+const BLOCKS = {
+  2: [
+    { id: 'bkHouse', parts: [B(50, 72, 28, 28, BK.red), PL(50, 49, 38, 18, BK.yellow, TRI_UP)] },
+    { id: 'bkTower', parts: [B(50, 76, 46, 20, BK.blue), B(50, 53, 26, 26, BK.green)] },
+    { id: 'bkBridge', parts: [AR(50, 73, 56, 26, BK.wood), SM(50, 51, 30, 18, BK.red)] }
+  ],
+  3: [
+    { id: 'bkGate', parts: [B(32, 70, 12, 32, BK.wood), B(68, 70, 12, 32, BK.wood), B(50, 47, 60, 14, BK.red)] },
+    { id: 'bkTower3', parts: [B(50, 75, 30, 22, BK.blue), B(50, 53, 30, 22, BK.yellow), PL(50, 33, 38, 18, BK.red, TRI_UP)] },
+    { id: 'bkArch3', parts: [AR(50, 72, 56, 28, BK.green), B(50, 51, 40, 14, BK.yellow), SM(50, 37, 26, 14, BK.blue)] }
+  ],
+  4: [
+    { id: 'bkHouse4', parts: [B(34, 72, 14, 28, BK.wood), B(66, 72, 14, 28, BK.wood), B(50, 51, 48, 14, BK.blue), PL(50, 33, 56, 22, BK.red, TRI_UP)] },
+    { id: 'bkSteps', parts: [B(32, 77, 18, 18, BK.red), B(50, 77, 18, 18, BK.yellow), B(68, 77, 18, 18, BK.blue), B(59, 59, 18, 18, BK.green)] },
+    { id: 'bkBridge4', parts: [B(26, 74, 16, 24, BK.yellow), B(74, 74, 16, 24, BK.yellow), AR(50, 74, 32, 24, BK.blue), B(50, 55, 64, 14, BK.wood)] }
+  ],
+  6: [
+    { id: 'bkCastle', parts: [B(50, 79, 64, 14, BK.wood), B(30, 62, 14, 20, BK.red), AR(50, 62, 26, 20, BK.blue), B(70, 62, 14, 20, BK.red), B(50, 45, 64, 14, BK.yellow), PL(50, 29, 40, 18, BK.green, TRI_UP)] },
+    { id: 'bkTwin', parts: [B(30, 74, 22, 24, BK.red), B(70, 74, 22, 24, BK.yellow), B(30, 50, 22, 24, BK.yellow), B(70, 50, 22, 24, BK.red), PL(30, 29, 28, 18, BK.green, TRI_UP), PL(70, 29, 28, 18, BK.green, TRI_UP)] }
   ]
 };
 // プレート：四角い枠（20〜80）を分けた形。頂点から部品を作る
@@ -458,6 +553,13 @@ const PLATES = {
   4: [[[20, 20], [80, 20], [50, 50]], [[80, 20], [80, 80], [50, 50]], [[80, 80], [20, 80], [50, 50]], [[20, 80], [20, 20], [50, 50]]],
   6: [[[20, 20], [50, 20], [50, 50], [20, 50]], [[50, 20], [80, 20], [80, 50], [50, 50]], [[20, 50], [50, 50], [20, 80]], [[50, 50], [50, 80], [20, 80]], [[50, 50], [80, 50], [80, 80]], [[50, 50], [80, 80], [50, 80]]]
 };
+// 矢印（本の図2）：軸の四角と、先の三角。下向きを基本に、上下左右へ回す
+const ARROWS = {
+  2: [[[42, 22], [58, 22], [58, 55], [42, 55]], [[26, 55], [74, 55], [50, 80]]],
+  3: [[[42, 22], [58, 22], [58, 55], [42, 55]], [[26, 55], [50, 55], [50, 80]], [[50, 55], [74, 55], [50, 80]]],
+  4: [[[42, 22], [58, 22], [58, 38.5], [42, 38.5]], [[42, 38.5], [58, 38.5], [58, 55], [42, 55]], [[26, 55], [50, 55], [50, 80]], [[50, 55], [74, 55], [50, 80]]]
+};
+const rot90 = ([x, y], k) => [[x, y], [100 - y, x], [100 - x, 100 - y], [y, 100 - x]][k];
 // ご石：丸いカードの中の並び
 const STONE_POS = {
   2: [[35, 50], [65, 50]],
@@ -470,6 +572,13 @@ const kindOf = p => [p.t, p.w, p.h, p.rot || 0, p.col, p.r || 0, JSON.stringify(
 // BASE＝見本の横に作るときの台紙（重ねるときは null）。looseZ＝台紙に残った部品の重なり順
 let BASE = null, looseZ = 0;
 const target = () => BASE ? BASE.r : CARD.r;
+// 見本の紙：on＝かぶせる（目標）、a＝かぶさり具合（0〜1）、lift＝めくり具合、peek＝めくっている指、firstT＝はじめだけ見せる残り秒
+const cov = { on: false, a: 0, lift: 0, peek: null, firstT: 0 };
+// 紙の音（さっ、と短く）
+let paperT = null;
+function paperSound(){ setRustle(0.32, 1500); clearTimeout(paperT); paperT = setTimeout(() => setRustle(0, 0), 170); }
+function setCover(on){ if (on !== cov.on && phase !== 'done' && ready && cov.a > -1) paperSound(); cov.on = on; if (on) cov.firstT = 0; const b = $('coverBtn'); if (b) b.setAttribute('aria-pressed', String(on)); }
+let buildT = 0;
 let CARD = null, LY = null, HOLES = [], PCS = [], phase = 'play', phT = 0, fadeA = 1, placeN = 0, idleT = 0, hint = null, rounds = 0, lastId = '';
 function makeCard(){
   const n = S.n;
@@ -479,13 +588,16 @@ function makeCard(){
     return { id: 'stone', style: 'fill', frame: 'circle', parts: STONE_POS[n].map(([x, y], i) => E(x, y, 18, 18, cols[i])) };
   }
   if (S.mat === 'plate'){
-    let v; do { v = Math.floor(Math.random() * 4); } while ('plate' + n + v === lastId && n !== 0);
+    // 四角の枠を分けた形と、矢印（図2）を、半々で出す（6つは枠だけ）
+    let id, arrow, v;
+    do { arrow = !!ARROWS[n] && Math.random() < 0.5; v = Math.floor(Math.random() * 4); id = (arrow ? 'arrow' : 'plate') + n + v; } while (id === lastId);
+    if (arrow) return { id, style: 'line', frame: null, parts: ARROWS[n].map(abs => polyAbs(abs.map(q => rot90(q, v)), COL.wood)) };
     const fx = v & 1, fy = v & 2;   // 左右・上下に返して、向きを変える
     const parts = PLATES[n].map(abs => polyAbs(abs.map(([x, y]) => [fx ? 100 - x : x, fy ? 100 - y : y]), COL.wood));
-    return { id: 'plate' + n + v, style: 'line', frame: 'square', parts };
+    return { id, style: 'line', frame: 'square', parts };
   }
-  const list = PAPERS[n]; let c; do { c = list[Math.floor(Math.random() * list.length)]; } while (list.length > 1 && c.id === lastId);
-  return { id: c.id, style: 'fill', frame: null, parts: c.parts };
+  const blk = S.mat === 'block', list = (blk ? BLOCKS : PAPERS)[n]; let c; do { c = list[Math.floor(Math.random() * list.length)]; } while (list.length > 1 && c.id === lastId);
+  return { id: c.id, style: blk ? 'block' : 'fill', frame: null, ground: blk ? 86 : 0, parts: c.parts };
 }
 
 // ---- 形（g＝描く先。見た目用と、当たり判定用の両方で使う）----
@@ -504,6 +616,11 @@ function partPath(g, p, cx, cy, s){
   if (p.t === 'ell'){ g.beginPath(); g.ellipse(cx, cy, w / 2, h / 2, rot, 0, Math.PI * 2); }
   else if (p.t === 'rect') gRR(g, cx - w / 2, cy - h / 2, w, h, Math.min(w, h) * (p.r || 0.1));
   else if (p.t === 'poly') gRoundPoly(g, p.pts.map(([u, v]) => R2(u * w, v * h)), Math.min(w, h) * (p.col === COL.wood ? 0.012 : 0.05));   // プレートは角をほとんど丸めない（枠にぴったり）
+  else if (p.t === 'arch'){
+    const x0 = cx - w / 2, x1 = cx + w / 2, y0 = cy - h / 2, y1 = cy + h / 2, rr = Math.min(w * 0.28, h * 0.62);
+    g.beginPath(); g.moveTo(x0, y1); g.lineTo(x0, y0); g.lineTo(x1, y0); g.lineTo(x1, y1); g.lineTo(cx + rr, y1); g.arc(cx, y1, rr, 0, Math.PI, true); g.closePath();
+  }
+  else if (p.t === 'semi'){ const y1 = cy + h / 2; g.beginPath(); g.moveTo(cx - w / 2, y1); g.ellipse(cx, y1, w / 2, h, 0, Math.PI, Math.PI * 2, false); g.closePath(); }
   else if (p.t === 'leaf'){
     const a = R2(0, -h / 2), b = R2(0, h / 2), c1 = R2(w, 0), c2 = R2(-w, 0);
     g.beginPath(); g.moveTo(a.x, a.y); g.quadraticCurveTo(c1.x, c1.y, b.x, b.y); g.quadraticCurveTo(c2.x, c2.y, a.x, a.y); g.closePath();
@@ -570,10 +687,17 @@ function place2screen(){
 function newRound(){
   phase = 'play'; phT = 0; fadeA = 1; placeN = 0; idleT = 0; hint = null; rounds++; looseZ = 0;
   CARD = makeCard(); lastId = CARD.id;
+  // 見本の紙：紙でかくす＝はじめから紙。はじめだけ＝見せてから5秒で紙
+  cov.peek = null; cov.lift = 0; setCover(S.cover === 'paper'); cov.a = cov.on ? 1 : 0; cov.firstT = 0;
+  // 作って見せる：見本の部品が1つずつ置かれる（紙でかくすときは、作るところも見えないので、すぐ出す）
+  CARD.pop = CARD.parts.map(() => -1);
+  if (S.build === 'build' && S.cover !== 'paper'){ phase = 'build'; buildT = 0; CARD.shown = 0; }
+  else { CARD.shown = CARD.parts.length; startPlay(); }
   HOLES = CARD.parts.map((p, i) => ({ p, z: i, kind: kindOf(p), x: 0, y: 0, piece: null }));
   PCS = shuffle(CARD.parts.map(p => ({ p, kind: kindOf(p), st: 'home', x: 0, y: 0, hx: 0, hy: 0, sc: 1, home: 1, lift: 0, sink: 0, anim: null, hole: null, back: false })));
   place2screen();
 }
+function startPlay(){ phase = 'play'; idleT = 0; if (S.cover === 'first') cov.firstT = 5; }
 function relayout(){ if (CARD) place2screen(); }
 function resetScenes(){ stars.length = 0; newRound(); }
 const inCard = p => { const r = target(), m = U * 0.03; return p.x > r.x - m && p.x < r.x + r.w + m && p.y > r.y - m && p.y < r.y + r.h + m; };
@@ -611,7 +735,7 @@ function landed(p){
   p.st = 'placed'; p.sink = 1; placeN++; idleT = 0;
   ping(PENTA[(placeN - 1) % 8] * 0.75, 0.06, 0.45, 2.9);
   addStars(p.hole.x, p.hole.y, maxD(p.p) * 0.45, Math.max(1, Math.round(LOOK[S.look].stars / 2)));
-  if (HOLES.every(h => h.piece)){ phase = 'done'; phT = 0; cheered = false; }
+  if (HOLES.every(h => h.piece)){ phase = 'done'; phT = 0; cheered = false; cov.peek = null; setCover(false); }   // 完成したら、紙を外して見本と見比べる
 }
 let cheered = false;
 function stayLoose(p){
@@ -698,6 +822,17 @@ function update(dt){
     if (p.sink > 0) p.sink = Math.max(0, p.sink - dt * 5);
     if (p.st === 'drag') followFinger(p);
   });
+  // 紙のかぶさりと、めくり（なめらかに）
+  cov.a += ((cov.on ? 1 : 0) - cov.a) * (1 - Math.exp(-dt / 0.12));
+  cov.lift += ((cov.peek !== null ? 1 : 0) - cov.lift) * (1 - Math.exp(-dt / 0.08));
+  if (phase === 'build'){
+    buildT += dt;
+    const step = 0.65, want = Math.min(CARD.parts.length, Math.floor(buildT / step) + 1);
+    while (CARD.shown < want){ CARD.pop[CARD.shown] = T; ping(PENTA[CARD.shown % 8] * 0.5, 0.035, 0.35, 2.9); CARD.shown++; }
+    if (CARD.shown >= CARD.parts.length && buildT > CARD.parts.length * step + 0.5) startPlay();
+    return;
+  }
+  if (phase === 'play' && cov.firstT > 0){ cov.firstT -= dt; if (cov.firstT <= 0) setCover(true); }
   if (phase === 'play'){
     if (![...ptrs.values()].length){ idleT += dt; if (S.hint === 'on' && !hint && idleT > asst().idle) showHint(7); }
     if (hint){ hint.t -= dt; if (hint.t <= 0 || hint.hole.piece) hint = null; }
@@ -724,16 +859,40 @@ function drawPaperCard(r, tint){
   gRR(ctx, r.x + U * 0.006, r.y + U * 0.014, r.w, r.h, U * 0.035); ctx.fillStyle = 'rgba(90,64,40,.16)'; ctx.fill();
   gRR(ctx, r.x, r.y, r.w, r.h, U * 0.035); ctx.fillStyle = tint || '#fffaf0'; ctx.fill(); ctx.strokeStyle = edgeCol(); ctx.lineWidth = edgeW(); ctx.stroke();
   if (CARD.frame === 'circle'){ const s = CARD.s; ctx.beginPath(); ctx.arc(r.x + 50 * s, r.y + 50 * s, 43 * s, 0, Math.PI * 2); ctx.strokeStyle = lineCol; ctx.lineWidth = lineW(); ctx.stroke(); }
+  if (CARD.ground){ const s = CARD.s, gy = r.y + CARD.ground * s; ctx.beginPath(); ctx.moveTo(r.x + 8 * s, gy); ctx.lineTo(r.x + 92 * s, gy); ctx.strokeStyle = 'rgba(120,90,55,.5)'; ctx.lineWidth = lineW() * 1.5; ctx.lineCap = 'round'; ctx.stroke(); }   // 積木：机の線
 }
 function drawSquareFrame(r){ if (CARD.frame !== 'square') return; const s = CARD.s; gRR(ctx, r.x + 20 * s, r.y + 20 * s, 60 * s, 60 * s, 2); ctx.strokeStyle = lineCol; ctx.lineWidth = lineW() * 1.6; ctx.stroke(); }
 // 見本（印刷のように、平らに描く）。r＝描くカード
 function drawModel(r){
   const s = CARD.s, lw = lineW();
-  CARD.parts.forEach(p => {
-    partPath(ctx, p, r.x + p.x * s, r.y + p.y * s, s);
+  CARD.parts.forEach((p, i) => {
+    if (i >= CARD.shown) return;   // 作って見せる：まだ置かれていない部品
+    const age = CARD.pop[i] < 0 ? 1 : (T - CARD.pop[i]) / 0.28, k = age < 1 ? 1 + 0.14 * (1 - age) * (1 - age) : 1;
+    ctx.save(); if (age < 1) ctx.globalAlpha = Math.max(0.15, age);
+    partPath(ctx, p, r.x + p.x * s, r.y + p.y * s - (age < 1 ? (1 - age) * (1 - age) * 6 * s : 0), s * k);
     if (CARD.style === 'line'){ ctx.fillStyle = '#f3e6c8'; ctx.fill(); ctx.strokeStyle = lineCol; ctx.lineWidth = lw; ctx.lineJoin = 'round'; ctx.stroke(); }
-    else { ctx.fillStyle = p.col; ctx.globalAlpha = 0.9; ctx.fill(); ctx.globalAlpha = 1; ctx.strokeStyle = 'rgba(90,64,40,.35)'; ctx.lineWidth = Math.max(1, U * 0.0025); ctx.stroke(); }
+    else { ctx.fillStyle = p.col; ctx.globalAlpha *= 0.9; ctx.fill(); ctx.globalAlpha /= 0.9; ctx.strokeStyle = CARD.style === 'block' ? 'rgba(90,64,40,.55)' : 'rgba(90,64,40,.35)'; ctx.lineWidth = Math.max(1, U * (CARD.style === 'block' ? 0.0035 : 0.0025)); ctx.stroke(); }
+    ctx.restore();
   });
+}
+// 見本にかぶせる紙（本物の紙のように、少し大きく、少し傾いている）。めくると上に持ち上がる
+function coverRect(){ const r = CARD.r, m = r.w * 0.05; return { x: r.x - m, y: r.y - m, w: r.w + 2 * m, h: r.h + 2 * m }; }
+function drawCover(){
+  if (cov.a < 0.01) return;
+  const c = coverRect(), a = cov.a, e = 1 - (1 - a) * (1 - a);
+  const dy = -(1 - e) * (c.y + c.h + U * 0.05) - cov.lift * c.h * 0.74, rot = -0.025 + cov.lift * 0.05;
+  ctx.save(); ctx.globalAlpha *= Math.min(1, a * 1.6);
+  ctx.translate(c.x + c.w / 2, c.y + c.h / 2 + dy); ctx.rotate(rot);
+  const x = -c.w / 2, y = -c.h / 2, fold = c.w * 0.11;
+  ctx.beginPath(); ctx.moveTo(x + U * 0.008, y + U * 0.018); ctx.lineTo(x + c.w + U * 0.008, y + U * 0.018); ctx.lineTo(x + c.w + U * 0.008, y + c.h + U * 0.018 - fold); ctx.lineTo(x + c.w + U * 0.008 - fold, y + c.h + U * 0.018); ctx.lineTo(x + U * 0.008, y + c.h + U * 0.018); ctx.closePath();
+  ctx.fillStyle = 'rgba(90,64,40,' + (0.16 + 0.1 * cov.lift).toFixed(3) + ')'; ctx.fill();
+  ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + c.w, y); ctx.lineTo(x + c.w, y + c.h - fold); ctx.lineTo(x + c.w - fold, y + c.h); ctx.lineTo(x, y + c.h); ctx.closePath();
+  const g = ctx.createLinearGradient(x, y, x + c.w, y + c.h); g.addColorStop(0, '#fffdf7'); g.addColorStop(1, '#f4ecdc');
+  ctx.fillStyle = g; ctx.fill(); ctx.strokeStyle = 'rgba(90,64,40,.28)'; ctx.lineWidth = Math.max(1, U * 0.0025); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(x + c.w, y + c.h - fold); ctx.lineTo(x + c.w - fold * 0.92, y + c.h - fold * 0.92); ctx.lineTo(x + c.w - fold, y + c.h); ctx.closePath(); ctx.fillStyle = '#e6dac2'; ctx.fill(); ctx.stroke();
+  ctx.strokeStyle = 'rgba(160,140,110,.12)'; ctx.lineWidth = Math.max(1, U * 0.002);   // 紙の目
+  for (let i = 1; i < 6; i++){ const yy = y + c.h * i / 6 + jit(i) * 2; ctx.beginPath(); ctx.moveTo(x + c.w * 0.08, yy); ctx.lineTo(x + c.w * 0.92 - (i === 5 ? fold : 0), yy + jit(i + 3) * 2); ctx.stroke(); }
+  ctx.restore();
 }
 function drawGlows(){
   const a = asst(), dragKinds = new Set(PCS.filter(p => p.st === 'drag').map(p => p.kind));
@@ -775,6 +934,7 @@ function drawPiece(p){
   partPath(ctx, p.p, x, y, s); ctx.fillStyle = g; ctx.fill(); ctx.strokeStyle = edgeCol(); ctx.lineWidth = edgeW() * (CARD.style === 'line' ? 1.4 : 1); ctx.lineJoin = 'round'; ctx.stroke();
   ctx.save(); partPath(ctx, p.p, x, y, s); ctx.clip();
   ctx.beginPath(); ctx.ellipse(x - d * 0.14, y - d * 0.2, d * 0.24, d * 0.1, -0.5, 0, Math.PI * 2); ctx.fillStyle = 'rgba(255,255,255,.32)'; ctx.fill();
+  if (CARD.style === 'block'){ ctx.strokeStyle = 'rgba(120,80,40,.13)'; ctx.lineWidth = Math.max(1, U * 0.0025); for (let i = -2; i <= 2; i++){ ctx.beginPath(); ctx.moveTo(x - d, y + i * d * 0.13); ctx.quadraticCurveTo(x, y + i * d * 0.13 + d * 0.05, x + d, y + i * d * 0.13); ctx.stroke(); } }
   ctx.restore();
 }
 function drawPieceHint(){
@@ -784,7 +944,7 @@ function drawPieceHint(){
 }
 function drawScene(){
   ctx.save(); ctx.globalAlpha = fadeA;
-  drawCard(); drawTray(); drawPieceHint();
+  drawCard(); drawCover(); drawTray(); drawPieceHint();
   PCS.filter(p => p.st === 'placed').sort((a, b) => a.hole.z - b.hole.z).forEach(drawPiece);
   PCS.filter(p => p.st === 'loose').sort((a, b) => a.z - b.z).forEach(drawPiece);
   PCS.filter(p => p.st !== 'placed' && p.st !== 'loose' && p.st !== 'drag').sort((a, b) => a.y - b.y).forEach(drawPiece);
@@ -813,7 +973,16 @@ function hitPiece(pt){
 cv.addEventListener('pointerdown', e => {
   e.preventDefault(); ensureAC();
   if (frozen || phase !== 'play' || ptrs.size >= maxPtrs()) return;
-  const pt = pos(e), p = hitPiece(pt); if (!p) return;
+  const pt = pos(e), p = hitPiece(pt);
+  if (!p){
+    // 紙をめくって見る：子どもが紙を押さえている間だけ、見本が見える
+    const c = coverRect();
+    if (cov.on && cov.a > 0.8 && S.peek === 'on' && cov.peek === null && pt.x > c.x && pt.x < c.x + c.w && pt.y > c.y && pt.y < c.y + c.h){
+      cov.peek = e.pointerId; try { cv.setPointerCapture(e.pointerId); } catch (_){}
+      paperSound();
+    }
+    return;
+  }
   if (p.st === 'placed'){ p.hole.piece = null; p.hole = null; placeN = Math.max(0, placeN - 1); }
   p.st = 'drag'; p.anim = null; p.back = false; p.gx = (p.x - pt.x) / p.sc; p.gy = (p.y - pt.y) / p.sc; p.px = pt.x; p.py = pt.y; idleT = 0; hint = null;
   ping(523, 0.012, 0.12, 2);
@@ -826,12 +995,12 @@ cv.addEventListener('pointermove', e => {
 });
 // つかんだ所が、指の下に残るようにする（部品が見本の大きさまで大きくなっても）
 function followFinger(p){ p.x = clamp(p.px + p.gx * p.sc, 0, W); p.y = clamp(p.py + p.gy * p.sc, 0, H); }
-function ptrUp(e){ const p = ptrs.get(e.pointerId); if (!p) return; ptrs.delete(e.pointerId); if (p.st === 'drag'){ idleT = 0; dropPiece(p); } }
+function ptrUp(e){ if (cov.peek === e.pointerId){ cov.peek = null; return; } const p = ptrs.get(e.pointerId); if (!p) return; ptrs.delete(e.pointerId); if (p.st === 'drag'){ idleT = 0; dropPiece(p); } }
 cv.addEventListener('pointerup', ptrUp);
 cv.addEventListener('pointercancel', ptrUp);
 document.addEventListener('gesturestart', e => e.preventDefault());
 document.addEventListener('dblclick', e => e.preventDefault());
-function cancelAll(){ ptrs.forEach(p => { if (p.st === 'drag') dropPiece(p); }); ptrs.clear(); }
+function cancelAll(){ ptrs.forEach(p => { if (p.st === 'drag') dropPiece(p); }); ptrs.clear(); cov.peek = null; }
 
 // ---- 毎フレーム ----
 let last = performance.now();
@@ -856,6 +1025,7 @@ function frame(now){
 // ---- 支援者の操作 ----
 function setFrozen(f){ frozen = f; $('freezeBtn').setAttribute('aria-pressed', String(f)); if (f) cancelAll(); applyVol(); }
 $('freezeBtn').addEventListener('click', () => { ensureAC(); setFrozen(!frozen); });
+$('coverBtn').addEventListener('click', () => { ensureAC(); cov.peek = null; setCover(!cov.on); });
 $('duskBtn').addEventListener('click', () => { ensureAC(); duskT = duskT ? 0 : 1; $('duskBtn').setAttribute('aria-pressed', String(!!duskT)); });
 const intro = $('intro');
 $('introBtn').addEventListener('click', () => { ensureAC(); intro.classList.add('hide'); });
@@ -872,10 +1042,13 @@ gear.addEventListener('pointerdown', e => {
 ['pointerup', 'pointerleave', 'pointercancel'].forEach(ev => gear.addEventListener(ev, () => { clearTimeout(holdTimer); gear.classList.remove('hold'); }));
 gear.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openPanel(); } });
 
-function curOpts(){ return { mode: S.mode, mat: S.mat, n: String(S.n), colors: String(S.colors), hint: S.hint, assist: S.assist, touch: S.firstOnly ? 'first' : 'all', look: S.look, cel: S.cel, vol: S.sound ? String(S.vol) : '0' }; }
+function curOpts(){ return { mode: S.mode, mat: S.mat, n: String(S.n), colors: String(S.colors), cover: S.cover, peek: S.peek, build: S.build, hint: S.hint, assist: S.assist, touch: S.firstOnly ? 'first' : 'all', look: S.look, cel: S.cel, vol: S.sound ? String(S.vol) : '0' }; }
 const MORE_DEF = { touch: 'first', look: 'mid', vol: '30', cel: 'soft' };
 const MORE_LBL = { cel: { none: 'お祝い：なし', mid: 'お祝い：ふつう', big: 'お祝い：派手' }, touch: { all: '触れ方：どの指でも' }, look: { soft: '見た目：やさしい', strong: '見た目：はっきり' }, vol: { '0': '音：なし', '15': '音：小', '45': '音：大' } };
-function showRows(){ document.querySelectorAll('#panel [data-only]').forEach(el => el.classList.toggle('on', el.dataset.only.split(' ').includes(S.mat))); }
+function showRows(){
+  document.querySelectorAll('#panel [data-only]').forEach(el => el.classList.toggle('on', el.dataset.only.split(' ').includes(S.mat)));
+  document.querySelectorAll('#panel [data-cover]').forEach(el => el.classList.toggle('on', el.dataset.cover.split(' ').includes(S.cover)));
+}
 function markOpts(){
   const cur = curOpts();
   document.querySelectorAll('#panel [data-set]').forEach(b => b.setAttribute('aria-pressed', String(cur[b.dataset.set] === b.dataset.v)));
@@ -891,6 +1064,13 @@ function markOpts(){
 function applySet(k, v){
   if (k === 'mat' || k === 'mode'){ cancelAll(); S[k] = v; newRound(); }
   else if (k === 'n' || k === 'colors'){ cancelAll(); S[k] = Number(v); newRound(); }
+  else if (k === 'cover'){
+    S.cover = v; cov.peek = null;
+    if (v === 'show') setCover(false); else if (v === 'paper') setCover(true);
+    else { setCover(false); if (phase === 'play') cov.firstT = 5; }   // はじめだけ：今から5秒見せて、紙
+  }
+  else if (k === 'peek'){ S.peek = v; if (v === 'off') cov.peek = null; }
+  else if (k === 'build'){ cancelAll(); S.build = v; newRound(); }
   else if (k === 'hint'){ S.hint = v; if (v === 'off') hint = null; }
   else if (k === 'assist') S.assist = v;
   else if (k === 'touch') S.firstOnly = v === 'first';
